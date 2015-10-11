@@ -29,3 +29,10 @@ mv .zshrc ~
 wget https://raw.githubusercontent.com/rcatajar/elementary-os-config/master/data/zsh/cloud.zsh-theme
 mkdir -p ~/.oh-my-zsh/custom/themes/
 mv cloud.zsh-theme ~/.oh-my-zsh/custom/themes/
+
+# vim
+mkdir -p ~/.vim/colors/
+wget https://raw.githubusercontent.com/rcatajar/elementary-os-config/master/data/vim/.vimrc
+mv .vimrc ~
+wget https://raw.githubusercontent.com/rcatajar/elementary-os-config/master/data/vim/base16-ocean.vim
+mv base16-ocean.vim ~/.vim/colors/

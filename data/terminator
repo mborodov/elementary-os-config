@@ -1,0 +1,43 @@
+[global_config]
+  handle_size = 1
+  title_hide_sizetext = True
+  always_split_with_profile = True
+  focus = system
+  enabled_plugins = ,
+  geometry_hinting = False
+  title_transmit_bg_color = "#bf616a"
+  inactive_color_offset = 0.94
+  title_inactive_bg_color = "#65737e"
+[keybindings]
+[profiles]
+  [[default]]
+    scrollbar_position = hidden
+    palette = "#2b303b:#bf616a:#a3be8c:#ebcb8b:#8fa1b3:#b48ead:#96b5b4:#c0c5ce:#65737e:#bf616a:#a3be8c:#ebcb8b:#8fa1b3:#b48ead:#96b5b4:#eff1f5"
+    background_image = None
+    use_system_font = False
+    cursor_color = "#c0c5ce"
+    foreground_color = "#c0c5ce"
+    icon_bell = False
+    font = Ubuntu Mono 12
+    background_color = "#2b303b"
+  [[Base16 Ocean Dark]]
+    scrollbar_position = hidden
+    palette = "#2b303b:#bf616a:#a3be8c:#ebcb8b:#8fa1b3:#b48ead:#96b5b4:#c0c5ce:#65737e:#bf616a:#a3be8c:#ebcb8b:#8fa1b3:#b48ead:#96b5b4:#eff1f5"
+    background_image = None
+    use_system_font = False
+    cursor_color = "#c0c5ce"
+    foreground_color = "#c0c5ce"
+    icon_bell = False
+    show_titlebar = False
+    font = Ubuntu Mono 12
+    background_color = "#2b303b"
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = Base16 Ocean Dark
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]

@@ -5,11 +5,15 @@
 #
 # Retrieve and copy my dotfiles
 
-# GIT
+# git
 wget https://raw.githubusercontent.com/rcatajar/elementary-os-config/master/data/gitconfig
 mv gitconfig ~/.gitconfig
 
-# AVATAR
+# Avatar
 wget https://raw.githubusercontent.com/rcatajar/elementary-os-config/master/data/avatar.png
 mv avatar.png ~/Pictures/
 
+# terminator
+wget https://raw.githubusercontent.com/rcatajar/elementary-os-config/master/data/terminator
+mkdir -p ~/.config/terminator
+mv terminator ~/.config/terminator/config

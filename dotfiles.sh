@@ -47,7 +47,7 @@ mv base16-ocean.vim ~/.vim/colors/
 mkdir -p ~/.ssh
 wget https://raw.githubusercontent.com/rcatajar/elementary-os-config/master/data/ssh
 mv ssh ~/.ssh/config
-cd .ssh
+cd ~/.ssh
 echo "name the key id_rsa_git"
 ssh-keygen -t rsa -b 4096 -C "rcatajar@gmail.com"
 ssh-add ~/.ssh/id_rsa_git

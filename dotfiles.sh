@@ -18,7 +18,14 @@ wget https://raw.githubusercontent.com/rcatajar/elementary-os-config/master/data
 mkdir -p ~/.config/terminator
 mv terminator ~/.config/terminator/config
 
-#touchegg
+# touchegg
 mkdir -p ~/.config/touchegg
 wget https://raw.githubusercontent.com/rcatajar/elementary-os-config/master/data/touchegg.conf
 mv touchegg.conf ~/.config/touchegg/
+
+# zsh
+wget https://raw.githubusercontent.com/rcatajar/elementary-os-config/master/data/zsh/.zshrc
+mv .zshrc ~
+wget https://raw.githubusercontent.com/rcatajar/elementary-os-config/master/data/zsh/cloud.zsh-theme
+mkdir -p ~/.oh-my-zsh/custom/themes/
+mv cloud.zsh-theme ~/.oh-my-zsh/custom/themes/

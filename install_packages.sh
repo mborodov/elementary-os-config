@@ -131,9 +131,10 @@ sudo apt-get install -y elementary-tweaks
 
 # google chrome
 cd /tmp
-#FIXME dependencies
 wget https://dl.google.com/linux/direct/google-chrome-beta_current_amd64.deb
 sudo dpkg -i google-chrome-beta_current_amd64.deb
+sudo apt-get install -y libappindicator1
+sudo apt-get install -f -y
 
 # Dropbox
 # Use a custom script because the ubuntu version is outdated and the indicator doesn't work

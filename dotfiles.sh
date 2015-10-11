@@ -23,6 +23,11 @@ mkdir -p ~/.config/touchegg
 wget https://raw.githubusercontent.com/rcatajar/elementary-os-config/master/data/touchegg.conf
 mv touchegg.conf ~/.config/touchegg/
 
+# htop
+mkdir -p ~/.config/htop
+wget https://raw.githubusercontent.com/rcatajar/elementary-os-config/master/data/htoprc
+mv htoprc ~/.config/htop/
+
 # zsh
 wget https://raw.githubusercontent.com/rcatajar/elementary-os-config/master/data/zsh/.zshrc
 mv .zshrc ~

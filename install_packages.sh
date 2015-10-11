@@ -39,9 +39,6 @@ sudo add-apt-repository -y ppa:libreoffice/ppa
 # VLC
 sudo add-apt-repository -y ppa:videolan/stable-daily
 
-# Numix themes and icons
-sudo add-apt-repository -y ppa:numix/ppa
-
 
 #################################
 #     UPDATE PACKAGES LIST      #
@@ -125,6 +122,9 @@ sudo apt-get install -y transmission-gtk
 
 # Numix Circle Icons
 sudo apt-get install -y numix-icon-theme-circle
+# Modify the icon themes so that it only change the apps icons and keep the default folders/ indicators
+wget https://raw.githubusercontent.com/rcatajar/elementary-os-config/master/data/icon-theme-fix/index.theme
+sudo mv index.theme /usr/share/icons/Numix-Circle
 
 # elementary tweaks
 sudo apt-get install -y elementary-tweaks

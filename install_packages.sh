@@ -156,7 +156,9 @@ cd touchegg-master/touchegg
 qmake
 make
 sudo make install
-# FIXME add to startup
+#add to startup
+wget https://github.com/rcatajar/elementary-os-config/raw/master/data/autostart/touchegg.desktop
+mv touchegg.desktop ~/.config/autostart/
 
 # Gtk-theme-variant-switcher (allow to force dark themes for some apps)
 cd /tmp
@@ -164,7 +166,16 @@ wget -O switcher.zip https://github.com/theblacklion/gtk-theme-variant-switcher/
 unzip switcher.zip
 cd gtk-theme-variant-switcher-master
 make install
-#FIXME add to startup
+# add to startup
+wget https://github.com/rcatajar/elementary-os-config/raw/master/data/autostart/gtk-theme-variant-switcher.desktop
+mv gtk-theme-variant-switcher.desktop ~/.config/autostart/
+
+# lightsOn (Prevents screen from locking when apps are running fullscreen)
+wget https://raw.githubusercontent.com/Innenseide/lightsOn/master/lightsOn.sh
+mkdir ~/.local/share/lightson
+mv lightsOn.sh ~/.local/share/lightson/
+wget https://github.com/rcatajar/elementary-os-config/raw/master/data/autostart/lightson.desktop
+mv lightson.desktop ~/.config/autostart/
 
 # VirtualBox
 cd /tmp

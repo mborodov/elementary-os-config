@@ -96,6 +96,13 @@ sudo apt-get install -y preload
 
 # TLP (power management)
 sudo apt-get install -y tlp tlp-rdw smartmontools ethtool thermald
+# copy config file
+wget https://raw.githubusercontent.com/rcatajar/elementary-os-config/master/data/tlp
+sudo mv tlp /etc/default/
+# enables intel-pstate
+wget https://raw.githubusercontent.com/rcatajar/elementary-os-config/master/data/grub
+sudo mv grub /etc/default/
+sudo update-grub
 
 # JAVA VM
 sudo apt-get install -y openjdk-7-jdk
@@ -195,6 +202,7 @@ sudo apt-get remove -y midori-granite noise scratch-text-editor software-center 
 #################################
 #            CLEANUP            #
 #################################
+
 sudo apt-get -y autoremove
 sudo apt-get -y autoclean
 

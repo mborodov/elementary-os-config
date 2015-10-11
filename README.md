@@ -6,9 +6,13 @@ My system configuration for elementary OS Freya (https://elementary.io)
 - trusty-backports updates enabled (enable them with the "Softwares And Updates" program)
 
 ## Installation instruction:
-TODO
+- Install packages and tweak the system:
+```
+wget https://raw.githubusercontent.com/rcatajar/elementary-os-config/master/install_packages.sh
+chmod +x install_packages.sh
+./install_packages
+```
 
 ## TODOS:
 - dotfiles
-- Chrome dependencies
-- manual actions
+- manual actions (Sublime config, SublimeCLang, tweaks, dock, chrome web app, dark theme apps)

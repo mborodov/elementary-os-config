@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name[en]=LightsOn
+Comment[en]=Prevents screen locking when some apps are running fullscreen
+Exec=bash /home/rcatajar/.local/share/lightson/lightsOn.sh 200
+Icon=application-default-icon
+X-GNOME-Autostart-enabled=true
+Type=Application

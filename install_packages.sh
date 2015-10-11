@@ -190,13 +190,16 @@ sudo apt-get install -y dkms libsdl1.2debian
 wget http://download.virtualbox.org/virtualbox/5.0.6/virtualbox-5.0_5.0.6-103037~Ubuntu~trusty_amd64.deb
 sudo dpkg -i virtualbox-5.0_5.0.6-103037~Ubuntu~trusty_amd64.deb
 
+# Eye of Gnome
+sudo apt-get install -y eog
+
 
 #################################
 #      REMOVE SOME PACKAGES     #
 #################################
 
 # Remove some default elementary apps, the ubuntu software center and the "Report an error" annoying popup
-sudo apt-get remove -y midori-granite noise scratch-text-editor software-center software-center-aptdaemon-plugins audience pantheon-terminal geary apport apport-gtk apport-hooks-elementary
+sudo apt-get remove -y midori-granite noise scratch-text-editor software-center software-center-aptdaemon-plugins audience pantheon-terminal geary apport apport-gtk apport-hooks-elementary pantheon-photos pantheon-photos-common
 
 
 #################################

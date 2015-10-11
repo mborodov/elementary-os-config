@@ -77,7 +77,7 @@ sudo apt-get install -y ttf-mscorefonts-installer
 sudo apt-get install -y unace rar unrar p7zip-rar p7zip zip unzip sharutils uudeview mpack arj cabextract file-roller arj lzip lunzip lame flac
 
 # Some utils packages
-sudo apt-get install -y htop vim zsh linux-tools-common linux-tools-generic dconf-tools gdebi menulibre
+sudo apt-get install -y git htop vim zsh linux-tools-common linux-tools-generic dconf-tools gdebi menulibre
 
 # C and C++ dev
 sudo apt-get install -y build-essential make cmake g++ clang llvm-dev cpp libqt4-dev libxtst-dev libx11-6 libgeis-dev libclang-dev freeglut3-dev libjpeg-dev libfreetype6-dev libxrandr-dev libglew-dev libsndfile1-dev libopenal-dev  libudev-dev libxcb-icccm4-dev libxcb-image0-dev libsfml-dev cppcheck
@@ -137,10 +137,10 @@ sudo dpkg -i google-chrome-beta_current_amd64.deb
 
 # Dropbox
 # Use a custom script because the ubuntu version is outdated and the indicator doesn't work
-mkdir -p ~/.config/autostart/
+mkdir -p ~/.config/autostart/   # make sure the autostart directory is here, otherwise the script crash
 cd /tmp
-wget https://github.com/nathandyer/elementary-dropbox-mods/archive/master.zip
-unzip master.zip
+wget -O dropbox.zip https://github.com/nathandyer/elementary-dropbox-mods/archive/master.zip
+unzip dropbox.zip
 cd elementary-dropbox-mods-master/
 ./dropbox-elementary.sh
 sudo ./dropbox-elementary.sh
@@ -149,12 +149,27 @@ sudo ./dropbox-elementary.sh
 # touchegg (enables multitouch gestures)
 # Compile it because the ubuntu version does not support gestures on the desktop
 cd /tmp
-wget https://github.com/JoseExposito/touchegg/archive/master.zip
-unzip master.zip
+wget -O touchegg.zip https://github.com/JoseExposito/touchegg/archive/master.zip
+unzip touchegg.zip
 cd touchegg-master/touchegg
 qmake
 make
 sudo make install
+# FIXME add to startup
+
+# Gtk-theme-variant-switcher (allow to force dark themes for some apps)
+cd /tmp
+wget -O switcher.zip https://github.com/theblacklion/gtk-theme-variant-switcher/archive/master.zip
+unzip switcher.zip
+cd gtk-theme-variant-switcher-master
+make install
+#FIXME add to startup
+
+# VirtualBox
+cd /tmp
+sudo apt-get install -y dkms libsdl1.2debian
+wget http://download.virtualbox.org/virtualbox/5.0.6/virtualbox-5.0_5.0.6-103037~Ubuntu~trusty_amd64.deb
+sudo dpkg -i virtualbox-5.0_5.0.6-103037~Ubuntu~trusty_amd64.deb
 
 
 #################################

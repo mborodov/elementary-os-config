@@ -9,3 +9,7 @@
 wget https://raw.githubusercontent.com/rcatajar/elementary-os-config/master/data/gitconfig
 mv gitconfig ~/.gitconfig
 
+# AVATAR
+wget https://raw.githubusercontent.com/rcatajar/elementary-os-config/master/data/avatar.png
+mv avatar.png ~/Pictures/
+

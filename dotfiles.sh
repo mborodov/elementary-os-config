@@ -36,3 +36,14 @@ wget https://raw.githubusercontent.com/rcatajar/elementary-os-config/master/data
 mv .vimrc ~
 wget https://raw.githubusercontent.com/rcatajar/elementary-os-config/master/data/vim/base16-ocean.vim
 mv base16-ocean.vim ~/.vim/colors/
+
+# ssh
+mkdir -p ~/.ssh
+wget https://raw.githubusercontent.com/rcatajar/elementary-os-config/master/data/ssh
+mv ssh ~/.ssh/config
+cd .ssh
+echo "name the key id_rsa_git"
+ssh-keygen -t rsa -b 4096 -C "rcatajar@gmail.com"
+ssh-add ~/.ssh/id_rsa_git
+echo "Add the following key to github \n https://github.com/settings/ssh \n"
+cat ~/.ssh/id_rsa_git.pub

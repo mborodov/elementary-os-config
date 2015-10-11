@@ -17,3 +17,8 @@ mv avatar.png ~/Pictures/
 wget https://raw.githubusercontent.com/rcatajar/elementary-os-config/master/data/terminator
 mkdir -p ~/.config/terminator
 mv terminator ~/.config/terminator/config
+
+#touchegg
+mkdir -p ~/.config/touchegg
+wget https://raw.githubusercontent.com/rcatajar/elementary-os-config/master/data/touchegg.conf
+mv touchegg.conf ~/.config/touchegg/

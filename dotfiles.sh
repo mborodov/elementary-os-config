@@ -34,6 +34,7 @@ mv .zshrc ~
 wget https://raw.githubusercontent.com/rcatajar/elementary-os-config/master/data/zsh/cloud.zsh-theme
 mkdir -p ~/.oh-my-zsh/custom/themes/
 mv cloud.zsh-theme ~/.oh-my-zsh/custom/themes/
+touch ~/.z
 
 # vim
 mkdir -p ~/.vim/colors/

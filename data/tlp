@@ -198,7 +198,7 @@ RESTORE_DEVICE_STATE_ON_STARTUP=0
 
 # Radio devices to disable on startup: bluetooth, wifi, wwan.
 # Separate multiple devices with spaces.
-#DEVICES_TO_DISABLE_ON_STARTUP="bluetooth wifi wwan"
+DEVICES_TO_DISABLE_ON_STARTUP="bluetooth"
 
 # Radio devices to enable on startup: bluetooth, wifi, wwan.
 # Separate multiple devices with spaces.
@@ -213,14 +213,14 @@ DEVICES_TO_DISABLE_ON_SHUTDOWN="bluetooth wifi"
 #DEVICES_TO_ENABLE_ON_SHUTDOWN="wwan"
 
 # Radio devices to enable on AC: bluetooth, wifi, wwan
-DEVICES_TO_ENABLE_ON_AC="bluetooth wifi"
+# DEVICES_TO_ENABLE_ON_AC="wifi"
 
 # Radio devices to disable on battery: bluetooth, wifi, wwan
-# DEVICES_TO_DISABLE_ON_BAT="bluetooth wifi wwan"
+# DEVICES_TO_DISABLE_ON_BAT="bluetooth"
 
 # Radio devices to disable on battery when not in use (not connected):
 # bluetooth, wifi, wwan
-#DEVICES_TO_DISABLE_ON_BAT_NOT_IN_USE="bluetooth wifi wwan"
+DEVICES_TO_DISABLE_ON_BAT_NOT_IN_USE="bluetooth"
 
 # Battery charge thresholds (ThinkPad only, tp-smapi or acpi-call kernel module
 # required). Charging starts when the remaining capacity falls below the

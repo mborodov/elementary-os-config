@@ -91,6 +91,9 @@ sudo npm install -g tern babel-eslint json eslint jshint coffee coffeelint coffe
 # meteor
 curl https://install.meteor.com/ | sh
 
+# LaTeX support
+sudo apt-get install -y texlive-full latexmk
+
 # Preload (preload in RAM most used softwares)
 sudo apt-get install -y preload
 

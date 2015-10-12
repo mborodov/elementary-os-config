@@ -87,6 +87,7 @@ sudo pip install django requests numpy scipy panda pep8 pyflakes virtualenv virt
 # JS dev
 # node
 sudo apt-get install -y nodejs npm
+sudo ln -s /usr/bin/nodejs /usr/bin/node
 sudo npm install -g tern babel-eslint json eslint jshint coffee coffeelint coffee-script underscore backbone mongo-hacker
 # meteor
 curl https://install.meteor.com/ | sh

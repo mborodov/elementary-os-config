@@ -146,6 +146,12 @@ sudo dpkg -i google-chrome-beta_current_amd64.deb
 sudo apt-get install -y libappindicator1
 sudo apt-get install -f -y
 
+# gnome-gmail (allow to use gmail as default email client)
+sudo apt-get install gir1.2-secret-1
+cd /tmp
+wget https://davesteele.github.io/gnome-gmail/deb/gnome-gmail_1.9.3-1_all.deb
+sudo dpkg -i gnome-gmail_1.9.3-1_all.deb
+
 # Dropbox
 # Use a custom script because the ubuntu version is outdated and the indicator doesn't work
 mkdir -p ~/.config/autostart/   # make sure the autostart directory is here, otherwise the script crash
